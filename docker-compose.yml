@@ -1,0 +1,12 @@
+db:
+  image: mongo
+         
+web:
+  image: my_flask_app:v0.1
+  ports:
+    - "8040:8040"
+  links:
+    - db:mongo
+        
+      
+            
